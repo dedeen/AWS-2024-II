@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "webserver-s3-ds" {
 
 resource "aws_s3_bucket_acl" "acl-websrv-s3-ds" {
   bucket = aws_s3_bucket.webserver-s3-ds.id
-  #acl    = "private"
+  acl    = "private"
  }
 
 # Set up directories for webserver configuration files:

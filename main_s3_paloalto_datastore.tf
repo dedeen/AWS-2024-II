@@ -10,10 +10,10 @@ resource "aws_s3_bucket" "pavm-s3-ds" {
   }
 }
 
-resource "aws_s3_bucket_acl" "acl-pavm-s3-ds" {
-  bucket = aws_s3_bucket.pavm-s3-ds.id
-  acl    = "private"
- }
+#resource "aws_s3_bucket_acl" "acl-pavm-s3-ds" {
+#  bucket = aws_s3_bucket.pavm-s3-ds.id
+#  acl    = "private"
+# }
 
 # Set up required bootstrap directory structure: /config, /content, /license, /software are mandatory dirs for PAN bootstrap to function 
 resource "aws_s3_object" "init_config" {

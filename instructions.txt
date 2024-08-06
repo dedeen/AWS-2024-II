@@ -1,3 +1,4 @@
 Clone repo down
 ./setup.sh
-terraform init, apply 
+terraform init, apply, check for no errors
+
